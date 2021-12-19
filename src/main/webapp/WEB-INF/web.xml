@@ -1,0 +1,91 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        version="3.0">
+
+    <servlet>
+        <servlet-name>showProducts</servlet-name>
+        <servlet-class>com.enigma.controller.product.ListProductController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>createProduct</servlet-name>
+        <servlet-class>com.enigma.controller.product.CreateProductController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>updateProduct</servlet-name>
+        <servlet-class>com.enigma.controller.product.UpdateProductController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>deleteProduct</servlet-name>
+        <servlet-class>com.enigma.controller.product.DeleteProductController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>showCustomers</servlet-name>
+        <servlet-class>com.enigma.controller.customer.ListCustomerController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>createCustomer</servlet-name>
+        <servlet-class>com.enigma.controller.customer.CreateCustomerController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>updateCustomer</servlet-name>
+        <servlet-class>com.enigma.controller.customer.UpdateCustomerController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>deleteCustomer</servlet-name>
+        <servlet-class>com.enigma.controller.customer.DeleteCustomerController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>showProducts</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>createProduct</servlet-name>
+        <url-pattern>/create-product</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>updateProduct</servlet-name>
+        <url-pattern>/update-product</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>deleteProduct</servlet-name>
+        <url-pattern>/delete-product</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>showCustomers</servlet-name>
+        <url-pattern>/customers</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>createCustomer</servlet-name>
+        <url-pattern>/create-customer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>updateCustomer</servlet-name>
+        <url-pattern>/update-customer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>deleteCustomer</servlet-name>
+        <url-pattern>/delete-customer</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
